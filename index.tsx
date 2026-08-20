@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
 
   gtag('config', 'G-BYGZ44GG53');
 </script>
-
+  
     
     meta: [
       { title: "Vridyna Technologies | Growth, Technology & AI" },
