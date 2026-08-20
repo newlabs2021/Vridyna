@@ -99,7 +99,6 @@ export function Header() {
         </div>
       ) : null}
 
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BYGZ44GG53"></script>
 <script>
@@ -109,7 +108,7 @@ export function Header() {
 
   gtag('config', 'G-BYGZ44GG53');
 </script>
-      
+     
       
     </header>   
   );
