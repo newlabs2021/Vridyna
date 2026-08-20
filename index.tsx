@@ -29,6 +29,14 @@ export const Route = createFileRoute("/")({
         content:
           "Growth marketing, search & AI discovery, websites, e-commerce, CRM, AI automation, creative and analytics — built for hotels, restaurants and ambitious businesses.",
       },
+
+      {
+        name: "keywords",
+        content:
+          "digital marketing, AI solutions, web development, SEO services, business automation, technology solutions, Vridyna Technologies",
+      },
+
+      
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
