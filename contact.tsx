@@ -14,13 +14,13 @@ export const Route = createFileRoute("/contact")({
   }),
   head: () => ({
     meta: [
-      { title: "Contact Vridyna Technologies | Chennai Growth & AI Company" },
+      { title: "Contact Vridyna | Chennai Growth & AI Company" },
       {
         name: "description",
         content:
-          "Talk to Vridyna Technologies about growth marketing, websites, CRM, AI automation and analytics. Based in Royapettah, Chennai. Call +91 97915 35649.",
+          "Talk to Vridyna about growth marketing, websites, CRM, AI automation and analytics. Based in Royapettah, Chennai. Call +91 97915 35649.",
       },
-      { property: "og:title", content: "Contact Vridyna Technologies" },
+      { property: "og:title", content: "Contact Vridyna " },
       {
         property: "og:description",
         content:
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/contact")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          name: "Vridyna Technologies",
+          name: "Vridyna",
           telephone: "+91 97915 35649",
           address: {
             "@type": "PostalAddress",
