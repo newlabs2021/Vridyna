@@ -67,7 +67,7 @@ export function ContactForm({ industrySlug }: { industrySlug?: string | undefine
     }
 
     const text = [
-      "Hello Vridyna Technologies,",
+      "Hello Vridyna,",
       "",
       "I would like to discuss a requirement.",
       "",
