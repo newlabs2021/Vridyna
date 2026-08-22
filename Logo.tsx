@@ -7,7 +7,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <Link
       to="/"
-      aria-label="Vridyna Technologies — home"
+      aria-label="Vridyna — home"
       className={cn("group inline-flex items-center", className)}
     >
       <img
