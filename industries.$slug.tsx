@@ -22,9 +22,9 @@ export const Route = createFileRoute("/industries/$slug")({
   head: ({ params }) => {
     const industry = getIndustry(params.slug);
     if (!industry) {
-      return { meta: [{ title: "Industry not found | Vridyna Technologies" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Industry not found | Vridyna" }, { name: "robots", content: "noindex" }] };
     }
-    const title = `${industry.name} Growth & Digital Solutions | Vridyna Technologies`;
+    const title = `${industry.name} Growth & Digital Solutions | Vridyna`;
     return {
       meta: [
         { title },
@@ -55,7 +55,7 @@ export const Route = createFileRoute("/industries/$slug")({
             "@context": "https://schema.org",
             "@type": "Service",
             serviceType: `${industry.name} growth, technology and AI solutions`,
-            provider: { "@type": "Organization", name: "Vridyna Technologies" },
+            provider: { "@type": "Organization", name: "Vridyna" },
             description: industry.description,
             areaServed: "IN",
           }),
