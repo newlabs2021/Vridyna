@@ -9,13 +9,13 @@ import { INDUSTRIES } from "@/lib/industries";
 export const Route = createFileRoute("/industries/")({
   head: () => ({
     meta: [
-      { title: "Industries We Serve | Vridyna Technologies" },
+      { title: "Industries We Serve | Vridyna" },
       {
         name: "description",
         content:
           "Growth marketing, technology, AI, creative and data solutions for hospitality, real estate, healthcare, e-commerce, retail, education, technology, manufacturing, professional services and the public sector.",
       },
-      { property: "og:title", content: "Industries | Vridyna Technologies" },
+      { property: "og:title", content: "Industries | Vridyna" },
       {
         property: "og:description",
         content:
@@ -32,7 +32,7 @@ export const Route = createFileRoute("/industries/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Industries served by Vridyna Technologies",
+          name: "Industries served by Vridyna",
           itemListElement: INDUSTRIES.map((industry, index) => ({
             "@type": "ListItem",
             position: index + 1,
