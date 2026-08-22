@@ -9,13 +9,13 @@ import { ADDRESS_LINES } from "@/lib/site";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Vridyna Technologies | Building a Modern Growth Company" },
+      { title: "About Vridyna | Building a Modern Growth Company" },
       {
         name: "description",
         content:
-          "Vridyna Technologies brings growth marketing, technology, AI, creative and data together under one roof. Built in Chennai, starting with hotels and restaurants.",
+          "Vridyna brings growth marketing, technology, AI, creative and data together under one roof. Built in Chennai, starting with hotels and restaurants.",
       },
-      { property: "og:title", content: "About — Vridyna Technologies" },
+      { property: "og:title", content: "About — Vridyna" },
       {
         property: "og:description",
         content:
@@ -45,7 +45,7 @@ function AboutPage() {
         <SectionHeading
           eyebrow="About"
           title="Building a Modern Growth Company."
-          subtitle="Vridyna Technologies is being built to bring growth marketing, technology, AI, creative and data together under one roof."
+          subtitle="Vridyna is being built to bring growth marketing, technology, AI, creative and data together under one roof."
         />
 
         <Reveal delay={80} className="mt-8 max-w-3xl space-y-5 text-base leading-relaxed text-muted-foreground">
@@ -93,7 +93,7 @@ function AboutPage() {
           <div className="surface-card flex flex-col gap-6 p-8 sm:p-10 lg:flex-row lg:items-center lg:justify-between">
             <address className="text-sm not-italic leading-relaxed text-muted-foreground">
               <span className="mb-2 block text-base font-semibold text-foreground">
-                Vridyna Technologies
+                Vridyna
               </span>
               {ADDRESS_LINES.map((line) => (
                 <span key={line} className="block">
