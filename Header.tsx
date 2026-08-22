@@ -53,7 +53,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button asChild variant="ghost" size="icon" className="lg:hidden" aria-label="Call Vridyna Technologies">
+          <Button asChild variant="ghost" size="icon" className="lg:hidden" aria-label="Call Vridyna">
             <a href={PHONE_TEL}>
               <Phone className="size-4" />
             </a>
