@@ -15,13 +15,13 @@ import { SERVICE_CATEGORIES } from "@/lib/site";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services | Growth, Search, Websites, CRM & AI — Vridyna Technologies" },
+      { title: "Services | Growth, Search, Websites, CRM & AI — Vridyna" },
       {
         name: "description",
         content:
           "Growth marketing, SEO/AEO/GEO, websites and e-commerce, CRM and technology, AI automation, creative and media, and analytics — the full Vridyna capability set.",
       },
-      { property: "og:title", content: "Services — Vridyna Technologies" },
+      { property: "og:title", content: "Services — Vridyna" },
       {
         property: "og:description",
         content:
