@@ -178,7 +178,7 @@ function HomePage() {
 
         <div className="mx-auto grid max-w-7xl gap-12 px-5 pb-16 sm:px-8 sm:pb-24 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <Reveal>
-            <p className="eyebrow">Vridyna..</p>
+            <p className="eyebrow">Vridyna Technologies..</p>
             <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] text-foreground sm:text-5xl lg:text-6xl">
               Build Visibility.
               <br />
@@ -190,7 +190,7 @@ function HomePage() {
               Digital Growth, Technology &amp; AI for Modern Businesses.
             </p>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Vridyna combines growth marketing, digital experiences, technology, AI
+              Vridyna Technologies combines growth marketing, digital experiences, technology, AI
               and data to help businesses build stronger brands, reach more customers and create
               sustainable growth.
             </p>
