@@ -18,8 +18,8 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-xs text-sm text-muted-foreground">
-              Growth. Technology. AI. A modern growth company built in Chennai for ambitious
-              businesses.
+              Growth. Technology. AI. A modern growth company built in Chennai
+              for ambitious businesses.
             </p>
             <Button asChild className="mt-6">
               <Link to="/contact">Talk to Us</Link>
@@ -27,7 +27,9 @@ export function Footer() {
           </div>
 
           <nav aria-label="Footer navigation">
-            <h2 className="text-sm font-semibold text-foreground">Navigation</h2>
+            <h2 className="text-sm font-semibold text-foreground">
+              Navigation
+            </h2>
             <ul className="mt-4 space-y-2.5 text-sm">
               {NAV_LINKS.map((link) => (
                 <li key={link.to}>
@@ -43,7 +45,9 @@ export function Footer() {
           </nav>
 
           <div>
-            <h2 className="text-sm font-semibold text-foreground">Services</h2>
+            <h2 className="text-sm font-semibold text-foreground">
+              Services
+            </h2>
             <ul className="mt-4 space-y-2.5 text-sm">
               {SERVICE_CATEGORIES.map((category) => (
                 <li key={category.id}>
@@ -60,7 +64,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h2 className="text-sm font-semibold text-foreground">Contact</h2>
+            <h2 className="text-sm font-semibold text-foreground">
+              Contact
+            </h2>
             <address className="mt-4 space-y-3 text-sm not-italic text-muted-foreground">
               <a
                 href={PHONE_TEL}
