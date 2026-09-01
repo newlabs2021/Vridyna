@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { INDUSTRIES as INDUSTRIES_LIST, type Industry } from "@/lib/industries";
 import { cn } from "@/lib/utils";
 
-
 export function IndustryCard({
   industry,
   compact = false,
@@ -72,4 +71,3 @@ export function IndustryCta({ industry }: { industry: Industry }) {
     </Button>
   );
 }
-
