@@ -1,3 +1,4 @@
+```tsx
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
@@ -15,6 +16,28 @@ export const Route = createFileRoute("/about")({
         content:
           "Vridyna brings growth marketing, technology, AI, creative and data together under one roof. Built in Chennai, starting with hotels and restaurants.",
       },
+
+      // SEO Keywords
+      {
+        name: "keywords",
+        content:
+          "Vridyna, Vridyna Technologies, Vridyna Chennai, digital marketing company Chennai, AI company Chennai, technology company Chennai, SEO company Chennai, web development Chennai, AI automation Chennai, growth marketing Chennai, hotel marketing, restaurant marketing, hospitality marketing",
+      },
+
+      // SEO Author
+      {
+        name: "author",
+        content: "Vridyna Technologies",
+      },
+
+      // Robots
+      {
+        name: "robots",
+        content:
+          "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      },
+
+      // Open Graph
       { property: "og:title", content: "About — Vridyna" },
       {
         property: "og:description",
@@ -22,10 +45,79 @@ export const Route = createFileRoute("/about")({
           "A modern growth company built in Chennai, designed for ambitious businesses, starting with hospitality.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/about" },
-      { name: "twitter:card", content: "summary_large_image" },
+      {
+        property: "og:url",
+        content: "https://www.vridyna.com/about",
+      },
+      {
+        property: "og:site_name",
+        content: "Vridyna Technologies",
+      },
+      {
+        property: "og:locale",
+        content: "en_IN",
+      },
+
+      // Twitter / X
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "About Vridyna | Modern Growth Company",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Vridyna brings growth marketing, technology, AI, creative and data together to help ambitious businesses grow.",
+      },
+
+      // Additional SEO
+      {
+        name: "theme-color",
+        content: "#0B1220",
+      },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+
+    // Canonical URL
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.vridyna.com/about",
+      },
+    ],
+
+    // Structured Data / Schema
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          name: "About Vridyna",
+          url: "https://www.vridyna.com/about",
+          description:
+            "Vridyna brings growth marketing, technology, AI, creative and data together under one roof. Built in Chennai, starting with hotels and restaurants.",
+          isPartOf: {
+            "@type": "WebSite",
+            name: "Vridyna",
+            url: "https://www.vridyna.com/",
+          },
+          about: {
+            "@type": "Organization",
+            name: "Vridyna",
+            url: "https://www.vridyna.com/",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Chennai",
+              addressRegion: "Tamil Nadu",
+              addressCountry: "IN",
+            },
+          },
+        }),
+      },
+    ],
   }),
   component: AboutPage,
 });
@@ -113,3 +205,4 @@ function AboutPage() {
     </div>
   );
 }
+```
