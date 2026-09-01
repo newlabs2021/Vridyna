@@ -24,12 +24,15 @@ export function Header() {
 
   useEffect(() => {
     const script = document.createElement("script");
+
     script.async = true;
     script.src =
       "https://www.googletagmanager.com/gtag/js?id=G-QBJJNCR73Y";
+
     document.head.appendChild(script);
 
     window.dataLayer = window.dataLayer || [];
+
     window.gtag = function () {
       window.dataLayer.push(arguments);
     };
@@ -45,30 +48,90 @@ export function Header() {
   return (
     <>
       <Helmet>
+        {/* =========================================================
+            PRIMARY SEO
+        ========================================================== */}
+
         <title>
-          Vridyna Technologies | Web Development, SEO & Digital Solutions
+          Vridyna Technologies | Web Development, SEO & Digital Marketing
         </title>
 
         <meta
           name="description"
-          content="Vridyna Technologies provides professional web development, SEO, digital marketing and technology solutions to help businesses build a stronger online presence and grow."
+          content="Vridyna Technologies provides professional web development, website design, SEO, digital marketing and technology solutions to help businesses increase online visibility, attract customers and grow."
         />
 
         <meta
           name="keywords"
-          content="Vridyna Technologies, web development, website development, SEO services, digital marketing, software development, web design, technology solutions, business solutions, India"
+          content="Vridyna Technologies, web development company, website development company, web design services, SEO services, SEO company India, digital marketing company, digital marketing services, software development, responsive web design, business website development, website design company, search engine optimization, local SEO, technical SEO, online marketing services, technology solutions, business technology solutions, website development India"
         />
 
-        <link rel="canonical" href="https://www.vridyna.com/" />
+        <meta
+          name="author"
+          content="Vridyna Technologies"
+        />
+
+        <meta
+          name="publisher"
+          content="Vridyna Technologies"
+        />
+
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+
+        <meta
+          name="googlebot"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+
+        <meta
+          name="bingbot"
+          content="index, follow"
+        />
+
+        <meta
+          name="language"
+          content="English"
+        />
+
+        <meta
+          httpEquiv="content-language"
+          content="en-IN"
+        />
+
+        <meta
+          name="revisit-after"
+          content="7 days"
+        />
+
+        {/* =========================================================
+            CANONICAL
+        ========================================================== */}
+
+        <link
+          rel="canonical"
+          href="https://www.vridyna.com/"
+        />
+
+        {/* =========================================================
+            OPEN GRAPH / FACEBOOK / LINKEDIN
+        ========================================================== */}
+
+        <meta
+          property="og:type"
+          content="website"
+        />
 
         <meta
           property="og:title"
-          content="Vridyna Technologies | Web Development, SEO & Digital Solutions"
+          content="Vridyna Technologies | Web Development, SEO & Digital Marketing"
         />
 
         <meta
           property="og:description"
-          content="Professional web development, SEO, digital marketing and technology solutions designed to help businesses grow online."
+          content="Build a stronger digital presence with Vridyna Technologies. Get professional web development, SEO, digital marketing and technology solutions designed to increase visibility, attract customers and grow your business."
         />
 
         <meta
@@ -76,12 +139,44 @@ export function Header() {
           content="https://www.vridyna.com/"
         />
 
-        <meta property="og:type" content="website" />
-
         <meta
           property="og:site_name"
           content="Vridyna Technologies"
         />
+
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+
+        <meta
+          property="og:image"
+          content="https://www.vridyna.com/og-image.jpg"
+        />
+
+        <meta
+          property="og:image:alt"
+          content="Vridyna Technologies - Web Development, SEO and Digital Marketing"
+        />
+
+        <meta
+          property="og:image:type"
+          content="image/jpeg"
+        />
+
+        <meta
+          property="og:image:width"
+          content="1200"
+        />
+
+        <meta
+          property="og:image:height"
+          content="630"
+        />
+
+        {/* =========================================================
+            TWITTER / X
+        ========================================================== */}
 
         <meta
           name="twitter:card"
@@ -90,22 +185,113 @@ export function Header() {
 
         <meta
           name="twitter:title"
-          content="Vridyna Technologies | Web Development, SEO & Digital Solutions"
+          content="Vridyna Technologies | Web Development, SEO & Digital Marketing"
         />
 
         <meta
           name="twitter:description"
-          content="Professional web development, SEO, digital marketing and technology solutions for businesses."
+          content="Professional web development, SEO, digital marketing and technology solutions to help businesses increase online visibility, attract customers and grow."
         />
 
-        <meta name="robots" content="index, follow" />
+        <meta
+          name="twitter:image"
+          content="https://www.vridyna.com/og-image.jpg"
+        />
 
-        <meta name="author" content="Vridyna Technologies" />
+        <meta
+          name="twitter:image:alt"
+          content="Vridyna Technologies - Digital Solutions"
+        />
+
+        {/* =========================================================
+            MOBILE / BROWSER
+        ========================================================== */}
 
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         />
+
+        <meta
+          name="theme-color"
+          content="#0EA5E9"
+        />
+
+        <meta
+          name="format-detection"
+          content="telephone=no"
+        />
+
+        {/* =========================================================
+            WEBSITE SCHEMA
+        ========================================================== */}
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://www.vridyna.com/#organization",
+                name: "Vridyna Technologies",
+                url: "https://www.vridyna.com/",
+                logo: {
+                  "@type": "ImageObject",
+                  "@id": "https://www.vridyna.com/#logo",
+                  url: "https://www.vridyna.com/logo.png",
+                  contentUrl: "https://www.vridyna.com/logo.png",
+                  caption: "Vridyna Technologies Logo",
+                },
+                description:
+                  "Vridyna Technologies provides professional web development, website design, SEO, digital marketing and technology solutions for businesses.",
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://www.vridyna.com/#website",
+                url: "https://www.vridyna.com/",
+                name: "Vridyna Technologies",
+                description:
+                  "Professional web development, SEO, digital marketing and technology solutions for businesses.",
+                publisher: {
+                  "@id": "https://www.vridyna.com/#organization",
+                },
+                inLanguage: "en-IN",
+              },
+            ],
+          })}
+        </script>
+
+        {/* =========================================================
+            SERVICE / BUSINESS SCHEMA
+        ========================================================== */}
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "@id": "https://www.vridyna.com/#business",
+            name: "Vridyna Technologies",
+            url: "https://www.vridyna.com/",
+            description:
+              "Vridyna Technologies offers web development, website design, SEO, digital marketing, software development and technology solutions for businesses.",
+            provider: {
+              "@id": "https://www.vridyna.com/#organization",
+            },
+            serviceType: [
+              "Web Development",
+              "Website Development",
+              "Web Design",
+              "SEO Services",
+              "Digital Marketing",
+              "Software Development",
+              "Technology Solutions",
+            ],
+            areaServed: {
+              "@type": "Country",
+              name: "India",
+            },
+          })}
+        </script>
       </Helmet>
 
       <header
